@@ -26,14 +26,14 @@ export const SingleHotel = () => {
     (async () => {
       try {
         const { data } = await axios.get(
-          `https://travelapp.cyclic.app/api/hotels/${id}`
+          `https://breezetravelapp-backend.onrender.com/api/hotels/${id}`
         );
         setSingleHotel(data);
       } catch (err) {
         console.log(err);
       }
     })();
-  }, []);
+  }, [id]);
 
   const { name, state } = singleHotel;
 

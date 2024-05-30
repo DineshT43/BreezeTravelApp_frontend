@@ -47,7 +47,8 @@ export const AuthModal = () => {
             className="button btn-auth btn-close d-flex align-center justify-center cursor-pointer"
             onClick={hanelModalCloseClick}
           >
-            <span className="material-icons-outlined">close</span>
+            <span className="material-symbols-outlined">close</span>
+            
           </button>
         </div>
         <div>

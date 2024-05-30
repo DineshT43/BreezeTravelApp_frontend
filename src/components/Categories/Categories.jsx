@@ -20,7 +20,7 @@ export const Categories = () => {
     (async () => {
       try {
         const { data } = await axios.get(
-          "https://travelapp.cyclic.app/api/category"
+          "https://breezetravelapp-backend.onrender.com/api/category"
         );
         setCategories(data);
       } catch (err) {
@@ -45,7 +45,7 @@ export const Categories = () => {
           className="button btn-filter d-flex align-center gap-small cursor-pointer"
           onClick={handleFilterClick}
         >
-          <span className="material-icons-outlined">filter_alt</span>
+          <span className="material-symbols-outlined">filter_alt</span>
           <span>Filter</span>
         </button>
       </div>

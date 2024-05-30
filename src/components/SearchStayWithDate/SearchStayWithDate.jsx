@@ -16,7 +16,7 @@ export const SearchStayWithDate = () => {
     (async () => {
       try {
         const { data } = await axios.get(
-          `https://travelapp.cyclic.app/api/hotels?category=${hotelCategory}`
+          `https://breezetravelapp-backend.onrender.com/api/hotels?category=${hotelCategory}`
         );
         setHotels(data);
       } catch (err) {
@@ -108,10 +108,10 @@ export const SearchStayWithDate = () => {
           className="search-container d-flex align-center cursor"
           onClick={handleSearchButtonClick}
         >
-          <span className="material-icons-outlined">search</span>
+          <span className="material-symbols-outlined">search</span>
           <span>Search</span>
         </div>
-        <button className="button absolute close-search-dest"><span onClick={handleSearchCloseClick} className="highlight material-icons-outlined">
+        <button className="button absolute close-search-dest"><span onClick={handleSearchCloseClick} className="highlight material-symbols-outlined">
           highlight_off
         </span></button>
       </div>

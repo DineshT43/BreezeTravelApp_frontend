@@ -27,7 +27,7 @@ export const OrderSummaryComp = () => {
             <div className="d-flex align-center justify-space-between br-bottom pd-small">
                 <h2>Order Summary</h2>
                 <button className="button btn-auth btn-close cursor-pointer d-flex align-center justify-center" onClick={handleContinueBookingClick}>
-                    <span class="material-icons-outlined">
+                    <span className="material-symbols-outlined">
                         close
                     </span>
                 </button>

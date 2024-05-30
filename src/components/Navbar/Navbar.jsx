@@ -56,16 +56,16 @@ export const Navbar = ({route}) => {
         <span className="form-option">
           {route !== "home" && guests > 0 ? `${guests} guests` : "Add Guests"}
         </span>
-        <span class="search material-icons-outlined">search</span>
+        <span className="search material-symbols-outlined">search</span>
       </div>
       }
       
       <nav className="d-flex align-center gap-large" onClick={handleAuthClick}>
         <div className="nav d-flex align-center cursor-pointer">
-          <span className="material-icons-outlined profile-option menu">
+          <span className="material-symbols-outlined profile-option menu">
             menu
           </span>
-          <span className="material-icons-outlined profile-option person">
+          <span className="material-symbols-outlined profile-option person">
             person_2
           </span>
         </div>

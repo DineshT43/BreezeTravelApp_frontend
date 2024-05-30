@@ -56,7 +56,7 @@ export const FinalPrice = ({ singleHotel }) => {
           <span className="fs-bold fs-large">Rs. {price}</span> night
         </p>
         <span className="rating d-flex align-center">
-          <span className="material-icons-outlined">star</span>
+          <span className="material-symbols-outlined">star</span>
           <span>{rating}</span>
         </span>
       </div>

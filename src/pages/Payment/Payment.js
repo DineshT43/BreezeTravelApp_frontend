@@ -26,7 +26,7 @@ export const Payment = () => {
     (async () => {
       try {
         const { data } = await axios.get(
-          `https://travelapp.cyclic.app/api/hotels/${id}`
+          `https://breezetravelapp-backend.onrender.com/api/hotels/${id}`
         );
         setSingleHotel(data);
       } catch (err) {
@@ -62,22 +62,24 @@ export const Payment = () => {
       amount: totalPayableAmount * 100,
       currency: "INR",
       name: "TravelO",
-      email: "demo@gmail.com",
-      contact: "9876543210",
+      email: "testcre@gmail.com",
+      contact: "7878787878",
       description: "Thank you for booking with us",
 
       handler: ({ payment_id }) => {
-        setHotel({...singleHotel, orderId: uuid(),
-        payment_id, 
-        checkInDate: checkInDate.toLocaleDateString("en-US", { day: "numeric", month: "short" }),
-        checkOutDate: checkOutDate.toLocaleDateString("en-US", { day: "numeric", month: "short" }),
-        totalPayableAmount});
+        setHotel({
+          ...singleHotel, orderId: uuid(),
+          payment_id,
+          checkInDate: checkInDate.toLocaleDateString("en-US", { day: "numeric", month: "short" }),
+          checkOutDate: checkOutDate.toLocaleDateString("en-US", { day: "numeric", month: "short" }),
+          totalPayableAmount
+        });
         navigate("/order-summary");
       },
       prefill: {
-        name: "Demo Profile",
-        email: "demo@gmail.com",
-        contact: "9876543210",
+        name: "testcredentials",
+        email: "testcre@gmail.com",
+        contact: "7878787878",
       },
     };
 
@@ -141,7 +143,7 @@ export const Payment = () => {
               </div>
               <div className="rating-container">
                 <span className="rating d-flex align-center">
-                  <span className="material-icons-outlined">star</span>
+                  <span className="material-symbols-outlined">star</span>
                   <span>{rating}</span>
                 </span>
               </div>

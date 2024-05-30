@@ -33,7 +33,7 @@ export const Filter = () => {
             className="button btn-filter-close cursor-pointer d-flex align-center justify-center"
             onClick={handleFilterModalCloseClick}
           >
-            <span className="material-icons-outlined">close</span>
+            <span className="material-symbols-outlined">close</span>
           </button>
         </div>
         <PriceRange />
